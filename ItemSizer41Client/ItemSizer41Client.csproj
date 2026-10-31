@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- ItemSizer41.Client：物品尺寸压缩 ItemSizer41 客户端件（不可读纹理兜底 + 图标尺寸跟随格子 + 缓存回收） -->
+  <PropertyGroup>
+    <AssemblyName>ItemSizer41.Client</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>1.1.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <RootNamespace>ItemSizer41.Client</RootNamespace>
+    <!-- 允许命令行覆盖：dotnet build -c Release -p:EFTRoot=D:\EFT4.1 -->
+    <EFTRoot Condition="'$(EFTRoot)' == ''">G:\EFT4.1</EFTRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony"><HintPath>$(EFTRoot)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(EFTRoot)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(EFTRoot)\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(EFTRoot)\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(EFTRoot)\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>
