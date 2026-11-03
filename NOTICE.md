@@ -4,7 +4,7 @@
 
 Copyright (c) 2026 DSH（dustinmoon78、DeepSeek Harness）
 
-本项目以 AGPL-3.0-or-later 发布，完整协议全文见本仓库 LICENSE；素材与文档为 CC BY-NC-SA 4.0，见 ASSETS-LICENSE。
+本项目以 AGPL-3.0-or-later 发布，完整协议全文见本仓库 LICENSE；素材与文档为 CC0 1.0（放弃著作权、不附条件），见 ASSETS-LICENSE。
 
 ## 上游致谢
 
